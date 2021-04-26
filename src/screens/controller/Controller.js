@@ -4,16 +4,16 @@ import Home from "../home/Home";
 import Login from "../../screens/login/Login";
 
 export default class Controller extends Component {
-    constructor() {
-        super();
-        this.state = {
-          baseUrl: "https://graph.instagram.com/",
-        };
-      }
+  constructor() {
+    super();
+    this.state = {
+      baseUrl: "https://graph.instagram.com/",
+    };
+  }
   render() {
     return (
       <Router>
-         <Route
+        <Route
           exact
           path="/"
           render={(props) => <Login {...props} baseUrl={this.state.baseUrl} />}
@@ -24,17 +24,6 @@ export default class Controller extends Component {
           path="/home"
           render={(props) => <Home {...props} baseUrl={this.state.baseUrl} />}
         />
-
-        {/* <Route
-          exact
-          path="/"
-          render={(props) => <Login {...props} baseUrl={this.baseUrl} />}
-        />
-        <Route
-          path="/?access_token=ACCESS-TOKEN"
-          render={(props) => <Home {...props} baseUrl={this.baseUrl} />}
-        />
-        <Route path /> */}
       </Router>
     );
   }
