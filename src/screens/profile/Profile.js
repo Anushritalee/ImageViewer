@@ -51,7 +51,7 @@ class Profile extends Component {
         this.state = {
             profile_picture: 'profile.png',
             username: null,
-            full_name: "anushritalall",
+            full_name: "Set your name here",
             posts: null,
             follows: null,
             followed_by: null,

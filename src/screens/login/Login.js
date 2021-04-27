@@ -50,9 +50,9 @@ class Login extends Component {
         // Set the access token here 
         // Validate credentials and redirect to home
         
-        if (this.state.username === "anushritalall" && this.state.password === "godisgood.1") {
-            sessionStorage.setItem('username','anushritalall');
-            sessionStorage.setItem('access-token', 'IGQVJYMUQ1TDB5ZAGlsY3Y2Wnh3ZAGp6bEhLZAjBmOFB5ZAWE2LVV0eS1BV1ZAabVdNZAUxJUXIwTXR5YjlJVlR4TzROVlo3WER4WklZAbHFHWE15MDVaQ0tDSlhEYVBsS1g1TUdzMC1NR09oWFp1cm9WTHZAYaG92eDVBaWdLdG1B');
+        if (this.state.username === "admin" && this.state.password === "admin") {
+            sessionStorage.setItem('username','admin');
+            sessionStorage.setItem('access-token', 'set your access token here');
             this.setState({ loggedIn: true });
 
             // Redirect to Home
